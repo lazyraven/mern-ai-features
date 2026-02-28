@@ -23,9 +23,9 @@ Production-ready Express backend featuring:
 
 
 # First Prompt On Copilot Chat
-// build a production-ready express backend
-// use mongodb with mongoose
-// include user authentication with jwt
-// use middleware for error handling
-// structure code with routes, controllers, models
-// follow best practices
+- // build a production-ready express backend
+- // use mongodb with mongoose
+- // include user authentication with jwt
+- // use middleware for error handling
+- // structure code with routes, controllers, models
+- // follow best practices
