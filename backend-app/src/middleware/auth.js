@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
-import User from '../models/User.js';
+// user entity is now part of the user feature module
+import User from '../modules/user/models/User.js';
 
 const protect = asyncHandler(async (req, res, next) => {
   let token;

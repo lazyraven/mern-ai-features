@@ -1,11 +1,4 @@
-import express from 'express';
-const router = express.Router();
+// legacy entrypoint for authentication; forwards to the user module
+import userRoutes from '../modules/user/routes/userRoutes.js';
 
-import { registerUser, loginUser, getProfile } from '../controllers/authController.js';
-import protect from '../middleware/auth.js';
-
-router.post('/register', registerUser);
-router.post('/login', loginUser);
-router.get('/profile', protect, getProfile);
-
-export default router;
+export default userRoutes;

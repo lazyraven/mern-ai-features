@@ -6,7 +6,8 @@ import cors from 'cors';
 import 'express-async-errors';
 
 import connectDB from './config/db.js';
-import authRoutes from './routes/auth.js';
+import userRoutes from './modules/user/routes/userRoutes.js';
+import projectRoutes from './modules/project/routes/projectRoutes.js';
 import errorHandler from './middleware/errorHandler.js';
 
 dotenv.config();
@@ -20,8 +21,9 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
-// routes
-app.use('/api/auth', authRoutes);
+// feature modules mounted by aggregate API paths
+app.use('/api/users', userRoutes);
+app.use('/api/projects', projectRoutes);
 
 // error handler
 app.use(errorHandler);
