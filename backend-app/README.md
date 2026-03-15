@@ -15,6 +15,10 @@ Production-ready Express backend featuring:
 3. Run dev server: `npm run dev` (requires nodemon)
 4. Build for production: `npm run build` then `npm start`
 
+## 📬 Create .env File
+MONGO_URI=mongodb://127.0.0.1:27017/mern_auth
+PORT=5000
+JWT_SECRET=9f8c5c5b5c2e7a1f1e1b7f8d6f8d6c6b9c3a9f5b7a1d2e3f4c5b6a7e8d9c0a1b
 ## API Endpoints
 
 - `POST /api/users/register` – register a new user
